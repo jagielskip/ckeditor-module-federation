@@ -11,9 +11,10 @@ export default defineConfig({
       filename: "remoteEntry.js",
       exposes: {
         './Button': './src/components/Button',
-        './HtmlEditor': './src/components/HtmlEditor'
+        './HtmlEditor': './src/components/HtmlEditor',
+        './HtmlEditorCustomElement': './src/components/HtmlEditorCustomElement'
       },
-      shared: ['react','react-dom', '@ckeditor/ckeditor5-react', 'ckeditor5']
+      shared: ['@ckeditor/ckeditor5-react', 'ckeditor5']
     })
   ],
   build: {
