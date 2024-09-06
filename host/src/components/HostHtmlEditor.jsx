@@ -1,70 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import { CKEditor } from "@ckeditor/ckeditor5-react";
 
-import {
-  ClassicEditor,
-  AccessibilityHelp,
-  Alignment,
-  Autoformat,
-  AutoImage,
-  AutoLink,
-  Autosave,
-  BlockQuote,
-  Bold,
-  Code,
-  CodeBlock,
-  Essentials,
-  FindAndReplace,
-  FontBackgroundColor,
-  FontColor,
-  FontFamily,
-  FontSize,
-  Heading,
-  Highlight,
-  HorizontalLine,
-  ImageBlock,
-  ImageCaption,
-  ImageInline,
-  ImageInsertViaUrl,
-  ImageStyle,
-  ImageTextAlternative,
-  ImageToolbar,
-  Indent,
-  IndentBlock,
-  Italic,
-  Link,
-  LinkImage,
-  List,
-  ListProperties,
-  PageBreak,
-  Paragraph,
-  RemoveFormat,
-  SelectAll,
-  SpecialCharacters,
-  SpecialCharactersArrows,
-  SpecialCharactersCurrency,
-  SpecialCharactersEssentials,
-  SpecialCharactersLatin,
-  SpecialCharactersMathematical,
-  SpecialCharactersText,
-  Strikethrough,
-  Subscript,
-  Superscript,
-  Table,
-  TableCaption,
-  TableCellProperties,
-  TableColumnResize,
-  TableProperties,
-  TableToolbar,
-  TextTransformation,
-  TodoList,
-  Underline,
-  Undo,
-} from "ckeditor5";
-
-import "ckeditor5/ckeditor5.css";
-
 import "./HtmlEditor.css";
+import ClassicEditor from "@ckeditor/ckeditor5-editor-classic/src/classiceditor";
 
 export default function HostHtmlEditor() {
   const editorContainerRef = useRef(null);
